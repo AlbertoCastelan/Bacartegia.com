@@ -28,13 +28,14 @@ body {
 /* ----------------------------------------- HEADER STYLES ---------------------------------------------------------*/
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 0 100px;
   background-color: #262626;
   width: 100%;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 header .logo {
@@ -91,7 +92,7 @@ header nav ul li a:hover {
 
 .slider img {
   width: 100%;
-  height: 850px;
+  height: 500px;
 }
 
 .studios {
@@ -114,40 +115,65 @@ header nav ul li a:hover {
 }
 
 .sections #company {
-  padding: 10px;
-  background-color: dodgerblue;
+  padding: 30px;
+  /* background-color: dodgerblue; */
 }
 
 .sections #values {
-  padding: 10px;
-  background-color: crimson;
+  padding: 30px;
+  /* background-color: crimson; */
 }
 
 .sections #products {
-  padding: 10px;
-  background-color: tan;
+  padding: 30px;
+  /* background-color: tan; */
 }
 
 .sections #sales {
-  padding: 10px;
-  background-color: greenyellow;
+  padding: 30px;
+  /* background-color: greenyellow; */
 }
+
 /* ------------------------------------- END OF MAIN STYLES ------------------------------------------------------*/
 
-/* ----------------------------------------- FOOTER STYLES ---------------------------------------------------------*/
+/* ------------------------------------PRICING PAGE SECTION STYLES -----------------------------------------------*/
 
-.grid-footer {
+.pricing {
+  margin-top: 40px;
+  padding: 40px;
+  background-color: gold;
+}
+
+#final-price {
+  width: 450px;
+  margin: 20px;
+  padding: 20px;
+  background-color: cornflowerblue;
+  font-size: 1em;
+}
+
+/* ------------------------------------ END OF PRICING PAGE SECTION STYLES ---------------------------------------*/
+
+/* ------------------------------------ MEETING ROOMS SECTION STYLES --------------------------------------------*/
+
+#meeting-rooms {
+  margin-top: 40px;
+  padding: 40px;
+  background-color: cornflowerblue;
+}
+
+#meeting-rooms img {
+  width: 75%;
+  height: auto;
+  border: 1px solid black;
+}
+
+/* ------------------------------------- END OF MEETING ROOMS SECTION STYLES -------------------------------------*/
+
+/* ----------------------------------------- FOOTER STYLES -------------------------------------------------------*/
+
+footer {
   background-color: turquoise;
-  display: grid;
-  grid-template-columns: 33%;
-}
-
-.left-list ul {
-  list-style: none;
-}
-
-.right-list ul {
-  list-style: none;
 }
 
 .social-media {
@@ -161,6 +187,7 @@ header nav ul li a:hover {
 .social-media i {
   font-size: 36px;
   margin: 0 50px;
+  cursor: pointer;
 }
 
 .copyright {
@@ -172,8 +199,47 @@ header nav ul li a:hover {
 /* ------------------------------------- END OF FOOTER STYLES ------------------------------------------------------*/
 
 /* ----------------------------------------- MEDIA QUERY STYLES ---------------------------------------------------------*/
+@media (max-width: 600px) {
+  .offices {
+    margin-top: 70px;
+    padding: 20px;
+    background-color: dodgerblue;
+  }
+
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .pricing {
+    background-color: palevioletred;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .offices {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: dodgerblue;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .pricing {
+    background-color: palevioletred;
+  }
+}
 
 @media (max-width: 991px) {
+  .slider img {
+    width: 100%;
+    height: 450px;
+  }
+
   header {
     padding: 0 20px;
   }
@@ -206,4 +272,65 @@ header nav ul li a:hover {
   }
 }
 
+@media (max-width: 850px) {
+  .slider img {
+    width: 100%;
+    height: 450px;
+  }
+
+  .sections {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 350px 350px 350px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .sections {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider img {
+    width: 100%;
+    height: 450px;
+  }
+
+  .studios {
+    display: block;
+    height: 50vh;
+  }
+
+  .social-media {
+    display: block;
+  }
+
+  .sections {
+    display: inline-block;
+  }
+
+  .social-media i {
+    font-size: 36px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 414px) {
+  .slider img {
+    width: 360px;
+    height: 360px;
+  }
+  .studios {
+    display: block;
+    height: 60vh;
+  }
+
+  .social-media i {
+    font-size: 28px;
+    margin: 5px;
+  }
+}
 /* ------------------------------------- END OF MEDIA QUERY STYLES ------------------------------------------------------*/
