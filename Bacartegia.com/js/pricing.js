@@ -13,22 +13,34 @@ function calculatePrice(e) {
   var selected = document.getElementById('rooms').value;
   var result = document.getElementById('show-result');
 
-  if (selected === 'Executive') {
-    console.log(days * 450);
-    result.innerHTML = `<p id="final-price">The price for ${days} in an executive office is £${days *
-      450}</p>`;
-  } else if (selected === 'Deluxe') {
-    console.log(days * 250);
-    result.innerHTML = `<p id="final-price">The price for ${days} in a deluxe office is £${days *
-      350}</p>`;
-  } else if (selected === 'Master') {
-    console.log(days * 200);
-    result.innerHTML = `<p id="final-price">The price for ${days} in a master room is £${days *
-      250}</p>`;
-  } else if (selected === 'Standard') {
-    console.log(days * 150);
-    result.innerHTML = `<p id="final-price">The price for ${days} in a standard room is £${days *
-      200}</p>`;
+  class Office {
+    constructor(type, price) {
+      this.type = type;
+      this.price = price;
+    }
+  }
+
+  var exec = new Office('Executive', 450);
+  var dlx = new Office('Deluxe', 250);
+  var master = new Office('Master', 200);
+  var stdrd = new Office('Standard', 150);
+
+  if (selected === exec.type) {
+    console.log(days * exec.price);
+    return result.innerHTML = `<p id="final-price">The price for ${days} in an executive office is £${days *
+      exec.price}</p>`;
+  } else if (selected === dlx.type) {
+    console.log(days * dlx.price);
+    return result.innerHTML = `<p id="final-price">The price for ${days} in a deluxe office is £${days *
+      dlx.price}</p>`;
+  } else if (selected === master.type) {
+    console.log(days * master.price);
+    return result.innerHTML = `<p id="final-price">The price for ${days} in a master room is £${days *
+      master.price}</p>`;
+  } else if (selected === stdrd.type) {
+    console.log(days * stdrd.price);
+    return result.innerHTML = `<p id="final-price">The price for ${days} in a standard room is £${days *
+      stdrd.price}</p>`;
   } else {
     console.log('Please input number of days');
   }
