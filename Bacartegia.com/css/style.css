@@ -97,7 +97,7 @@ header nav ul li a:hover {
 
 .studios {
   width: 100%;
-  height: 40vh;
+  
   background-color: gray;
   margin: 0 auto;
   padding: 30px;
@@ -111,27 +111,27 @@ header nav ul li a:hover {
   margin: 0 auto;
   padding: 0 auto;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .sections #company {
   padding: 30px;
-  /* background-color: dodgerblue; */
+  background-color: dodgerblue;
 }
 
 .sections #values {
   padding: 30px;
-  /* background-color: crimson; */
+  background-color: crimson;
 }
 
 .sections #products {
   padding: 30px;
-  /* background-color: tan; */
+  background-color: tan;
 }
 
 .sections #sales {
   padding: 30px;
-  /* background-color: greenyellow; */
+  background-color: greenyellow;
 }
 
 /* ------------------------------------- END OF MAIN STYLES ------------------------------------------------------*/
@@ -176,6 +176,22 @@ footer {
   background-color: turquoise;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 20px;
+}
+
+.left-list ul li,
+.right-list ul li {
+  list-style: none;
+}
+
+.left-list a,
+.right-list a  {
+  text-decoration: none;
+}
+
 .social-media {
   width: 100%;
   height: 150px;
@@ -199,7 +215,43 @@ footer {
 /* ------------------------------------- END OF FOOTER STYLES ------------------------------------------------------*/
 
 /* ----------------------------------------- MEDIA QUERY STYLES ---------------------------------------------------------*/
+@media (max-width: 320px) {
+ .studios {
+   font-size: 0.7em;
+ }
+
+}
+
+@media (max-width: 390px) {
+  .studios  {
+    font-size: 0.7em;
+  }
+}
+
 @media (max-width: 600px) {
+  .slider img {
+    width: 100%;
+    height: 450px;
+  }
+
+  
+  .social-media i {
+    font-size: 36px;
+    margin: 5px;
+  }
+
+.studios  {
+  font-size: 0.7em;
+}
+  
+.sections {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  
+}
+
   .offices {
     margin-top: 70px;
     padding: 20px;
@@ -218,6 +270,14 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    
+  }
+
   .offices {
     margin-top: 80px;
     padding: 20px;
@@ -299,10 +359,7 @@ footer {
     height: 450px;
   }
 
-  .studios {
-    display: block;
-    height: 50vh;
-  }
+ 
 
   .social-media {
     display: block;
@@ -323,11 +380,7 @@ footer {
     width: 360px;
     height: 360px;
   }
-  .studios {
-    display: block;
-    height: 60vh;
-  }
-
+  
   .social-media i {
     font-size: 28px;
     margin: 5px;
