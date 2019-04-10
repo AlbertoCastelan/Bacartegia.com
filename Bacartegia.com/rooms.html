@@ -60,46 +60,83 @@
     <main id="meeting-rooms">
       <div id="rooms">
         <h1>Offices to Hire</h1>
-      </div>
 
-      <div id="offices">
-        <nav>
-          <button onclick="displayRoom(0)">
-            Executive Office
-          </button>
-          <button onclick="displayRoom(1)">Deluxe Office</button>
-          <button onclick="displayRoom(2)">Master Office</button>
-          <button onclick="displayRoom(3)">Standard Office</button>
-        </nav>
-      </div>
+        <div id="offices">
+          <nav>
+            <ul>
+              <li>
+                <button class="btn" id="btn-1" name="0">
+                  Executive Office
+                </button>
+              </li>
+              <li>
+                <button class="btn" id="btn-2" name="1">Deluxe Office</button>
+              </li>
+              <li>
+                <button class="btn" id="btn-3" name="2">Master Office</button>
+              </li>
+              <li>
+                <button class="btn" id="btn-4" name="3">Standard Office</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-      <h3 id="office-name">Office Name</h3>
-      <p id="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni itaque
-        voluptatem architecto saepe et, deserunt sint, vero doloribus ducimus id
-        facilis, quis sapiente laborum vel? Ad maiores tenetur accusamus quasi.
-      </p>
-      <p id="price">£</p>
-      <img id="photo" src="#" alt="Office Photo" />
+        <h3 id="office-name">Office Name</h3>
+        <p id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni itaque
+          voluptatem architecto saepe et, deserunt sint, vero doloribus ducimus
+          id facilis, quis sapiente laborum vel? Ad maiores tenetur accusamus
+          quasi.
+        </p>
+        <p id="price">£</p>
+        <img id="photo" src="#" alt="Office Photo" />
+      </div>
     </main>
 
     <!-- FOOTER SECTION -->
     <footer>
-      <div class="social-media">
-        <i class="fab fa-facebook-f">
-          <a href="https://www.facebook.com"></a>
-        </i>
-        <i class="fab fa-twitter">
-          <a href="https://www.twitter.com"></a>
-        </i>
-        <i class="fab fa-instagram">
-          <a href="https://www.instagram.com"></a>
-        </i>
-        <i class="fab fa-linkedin-in">
-          <a href="https://www.linkedin.com"></a>
-        </i>
+      <div class="footer-list">
+        <h5>More about us <i id="footer-logo" class="fas fa-laptop"></i></h5>
+        <div class="first-list">
+          <ul>
+            <li>
+              <a href="#">Values</a>
+            </li>
+            <li>
+              <a href="#">Partners</a>
+            </li>
+            <li>
+              <a href="#">Find Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="second-list">
+          <ul>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Data Terms of Service</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="copyright">
+
+      <div class="social-media">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+
+        <a href="https://www.linkedin.com">
+          <i class="fab fa-linkedin-in"></i
+        ></a>
+
         <p>
           &copy;2019 Bacartegia Studios Ltd.
         </p>
