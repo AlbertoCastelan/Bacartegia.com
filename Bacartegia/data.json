@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Executive Office",
+    "price": "£450",
+    "description": "A luxurious room for your business meetings, finely decorated with the best leather furniture",
+    "photo": "img/executiveoffice.jpg"
+  },
+  {
+    "name": "Deluxe Office",
+    "price": "£350",
+    "description": "The deluxe room is the perfect place for your private meetings",
+    "photo": "img/deluxeoffice.jpeg"
+  },
+  {
+    "name": "Master Office",
+    "price": "£250",
+    "description": "The master room upholds the best quality and comfort for your daily work",
+    "photo": "img/masteroffice.jpeg"
+  },
+  {
+    "name": "Standard Office",
+    "price": "£200",
+    "description": "If you would rather work by yourself, the standard room is your best choice",
+    "photo": "img/standardoffice.jpeg"
+  }
+]

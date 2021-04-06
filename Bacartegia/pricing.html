@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./img/briefcase.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bacartegia Studios</title>
+  </head>
+  <body>
+    <header class="header">
+
+     
+      <img class="header__logo" src="img/logo/logo_small_icon_only_inverted.png"/>
+     
+
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about-us.html">About Us</a>
+          </li>
+          <li>
+            <a href="company.html">Company</a>
+          </li>
+          <li>
+            <a href="pricing.html">Pricing</a>
+          </li>
+          <li>
+            <a href="rooms.html">Meeting Rooms</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__menu--toggle">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </div>
+
+    </header>
+
+    <main>
+
+      <div class="pricing">
+        <div class="pricing__images">
+          <h1>Inquiries</h1>
+
+          <p>
+            Are you interested in hiring a room for a private event? Calculate
+            your budget!
+          </p>
+          <img class="pricing__images-slider" id="images-slider" alt="" />
+        </div>
+
+        <div class="pricing__form">
+          <h3>Budget Calculator</h3>
+          <p>
+            Calculate your budget with our calculator, get a 20% discount if you
+            book any private <br />
+            office for five consecutive days and get one free day if you book
+            for two weeks!
+          </p>
+          <form>
+            <p>
+              Select number of days:
+              <br />
+              <input class="pricing__offices-days" type="text" />
+            </p>
+            <br />
+
+            <p>Select type of room:</p>
+            <select name="rooms" class="pricing__offices">
+              <option value="Executive">Executive</option>
+              <option value="Deluxe">Deluxe</option>
+              <option value="Master">Master</option>
+              <option value="Standard">Standard</option>
+            </select>
+            <br />
+            <br />
+            <button class="pricing__offices-submit">Calculate</button>
+          </form>
+          <div class="pricing__offices-result inactive"></div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <h5>More about us <i id="footer-logo" class="fas fa-laptop"></i></h5>
+      <div class="footer-list">
+        <div class="footer__first-list">
+          <ul>
+            <li>
+              <a href="#">Values</a>
+            </li>
+            <li>
+              <a href="#">Partners</a>
+            </li>
+            <li>
+              <a href="#">Find Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__second-list">
+          <ul>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Data Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__social-media">
+        <div class="footer__social-media-links">
+          <a href="https://www.facebook.com">
+          <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+        
+        <div class="footer__social-media-copyright">
+          <p>
+            &copy;2021 Bacartegia Studios Ltd.
+          </p>
+        </div>
+        
+      </div>
+    </footer>
+
+    <script src="js/pricing.js"></script>
+  </body>
+</html>
